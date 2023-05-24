@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <!--Info. página-->
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width = device-width">
+
+        <title>Challenge: Encriptador de Texto</title>
+
+        <!--Referencias CSS-->
+        <link rel="stylesheet" href="reset.css">
+        <link rel="shortcut icon" href="imagenes/icono_lupa_azul.ico">
+        <link rel="stylesheet" href="style.css">
+
+        <!--Fuente-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+
+    </head>
+
+    <!--Cont. página-->
+    <body>
+
+        <header>
+            <h1>
+                <img src="imagenes/Vectorlogo_alura.png">
+            </h1>
+        </header>
+
+        <main>
+    
+            <section>
+    
+                <textarea cols="60" rows="25" id="campo-texto" placeholder="Introduce el texto aquí" class="texto-ende"></textarea>
+                <label for="campo-texto" class="texto-ende"><img src="imagenes/Vectorwarning.png">De preferencia solo minúsculas y sin acentos</label>
+    
+                <!--Botones para el texto-->
+                <button type="button" id="encripta" class="boton-endes">Encriptar</button>
+                <button type="button" id="desencripta" class="boton-endes">Desencriptar</button>
+    
+            </section>
+
+            <!--Si hay un texto-->
+            <div id="muestra-texto" class="texto-resultado">
+                
+                <textarea readonly cols="60" rows="25" id="res-texto" placeholder="Resultado"></textarea>
+                <label for="res-texto">Puedes copiar el mensaje con el botón de abajo :D</label>
+                <button type="button" class="boton-copiar">Copiar</button>
+            </div>
+    
+            <!--Si no hay nada-->
+            <div class="no-texto">
+                <img src="imagenes/Munecosearch_guy.png">
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p>Ingresa el texto que desees encriptar o desencriptar</p>
+                
+            </div>
+    
+        </main>
+
+    <!--Scripts-->
+    <script src="script_3.js"></script>
+
+    </body>
+
+    <!--Pie página-->
+    <footer>
+        <img src="imagenes/Mutie.png" alt="Dibujo de un gatito negro con 4 ojos blancos">
+        <p>★ Por: Fátima Estefanía Guerrero Martínez ★</p>
+    </footer>
+
+</html>

@@ -1,0 +1,206 @@
+/*CSS para el encriptar/desencriptador*/
+body{
+    background-color: #E5E5E5;
+    font-family: 'Inter', sans-serif;
+}
+
+h1{
+    margin: 1.8em 7em;
+}
+
+section{
+    position: relative;
+    margin: 0em 17em;
+}
+
+#campo-texto{
+    color: #0A3871; /*Color de la letra*/
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    width: 460px;
+    height: 400px;
+    resize: none; /*para que no se pueda cambiar el tamaño*/
+}
+
+.texto-ende{
+    display: block;
+    background-color: #E5E5E5;
+    border: none;
+}
+
+.text-ende label{
+    color: #495057;
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+
+label img{
+    width: 0.8em;
+    margin-top: 10px;
+}
+
+.boton-endes{
+    /* padding: 15px 70px; */
+    width: 215px;
+    height: 40px;
+    display: inline;
+    border-radius: 24px;
+}
+
+#encripta{
+    /* margin: 10px 20px 10px 202px; */
+    margin: 1em 10px;
+    background-color: #0A3871;
+    border: none;
+    color: white;
+}
+
+#encripta:hover{
+    color: #0A3871;
+    background-color: #D8DFE8;
+    border-color: #0A3871;
+    border-style: solid;
+    border-width: thin;
+    transition: 100ms;
+    box-shadow: 0 4px 10px 0 #939393;
+    cursor: pointer;
+}
+
+#desencripta{
+    background-color: #D8DFE8;
+    border: #0A3871;
+    border-style: solid;
+    border-width: thin;
+    color: #0A3871;
+}
+
+#desencripta:hover, .boton-copiar:hover{
+    color: white;
+    background-color: #0A3871;
+    border-color: #0A3871;
+    border-style: solid;
+    border-width: thin;
+    transition: 100ms;
+    box-shadow: 0 4px 10px 0 #939393;
+    cursor: pointer;
+}
+
+
+.texto-resultado{
+    text-align: center;
+}
+
+.texto-resultado textarea{
+    width: 250px;
+    height: 430px;
+    margin: 0.65em;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+    color: #343A40;
+    resize: none;
+}
+
+.texto-resultado label{
+    font-size: 13px;
+    font-style: italic;
+    color: #343A40;
+}
+
+.boton-copiar{
+    width: 180px;
+    height: 40px;
+    background-color: white;
+    border-color: #0A3871;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 24px;
+    margin: 8.5% 18% 0;
+}
+
+/*div sin texto*/
+.no-texto, .texto-resultado{
+    width: 280px;
+    height: 570px;
+    background: white;
+    border-radius: 32px;
+    box-shadow: 0 4px 10px 0 #CCC;
+
+    position: absolute;
+    margin: -575px 100px 20px 820px;
+}
+
+.no-texto img{
+    width: 230px;
+    margin: 40% 10% 10%;
+}
+
+.no-texto h2{
+    text-align: center;
+    font-weight: bold;
+    color: #343A40;
+    font-size: 20px; /*para que sea más grande*/
+}
+
+.no-texto p{
+    color: #495057;
+    font-size: 0.8em;
+    font-weight: 550;
+    text-align: center;
+    margin: 1em;
+}
+
+
+footer{
+    text-align: center;
+    padding: 20px;
+    margin: 2% auto auto;
+    font-size: 0.8em;
+    background-color: #0A3871;
+    color: white;
+}
+
+footer img{
+    width: 70px;
+}
+
+/******** Responsive ***********/
+/*por lo pronto lo dejaré así*/
+@media screen and (max-width:480px){
+    h1{
+        text-align: center;
+        padding: 1em;
+    }
+
+    section, .no-texto, .texto-resultado{
+        width: auto;
+        position: relative;
+        margin: 1em 3.5em 1em;
+    }
+
+    #campo-texto{
+        width: 77%;
+        height: 14em;
+    }
+
+    .boton-endes{
+        display: block;
+    }
+
+    #encripta{
+        margin: 1.5em 3.5em 1em;
+    }
+
+    #desencripta{
+        margin: auto;
+    }
+
+    /*Respecto a los dos divs de no-texto y 
+    texto-resultado, tiene un problema: que al momento de
+    hacer la pantalla más pequeña (si apenas se ha cargado
+    la página) se verán los dos.*/
+
+}
