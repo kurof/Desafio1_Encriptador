@@ -1,0 +1,241 @@
+/*version 0.1.2 - nuevo estilo*/
+body{
+    background-color: #F2E9E4;
+    font-family: 'Inter', sans-serif;
+}
+
+h1{
+    margin: 2.5em 7em;
+    /* width: 50%; */
+}
+
+.logo{
+    height: 3em;
+}
+
+/*Seccion para introducir texto*/
+
+section{
+    position: relative;
+    margin: 0em 9em;
+}
+
+#campo-texto{
+    color: #4A4E69; /*Color de la letra*/
+    font-family: 'Inter', sans-serif;
+    font-size: 1.3em;
+    font-weight: bold;
+    width: 460px; /*esto para que no se reacomode*/
+    height: 370px;
+    resize: none; /*para que no se pueda cambiar el tamaño */
+}
+
+.texto-ende{ /*tanto label como textarea*/
+    display: block;
+    background-color: #F2E9E4;
+    border: none;
+}
+
+section label{
+    color: #4A4E69;
+    font-size: 0.9em;
+    margin: 1em;
+}
+
+section label img{
+    width: 0.8em;
+    margin-right: 0.5em;
+}
+
+/*botones*/
+.boton-endes, .boton-copiar{
+    display: inline;
+    width: 15em;
+    height: 2.7em;
+    font-size: 0.8em;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0.15em;
+    border-radius: 2em;
+    border: none;
+    color: white;
+}
+
+#encripta{
+    background-color: #4A4E69;
+    margin: 0.2em 2em 1.5em;
+}
+
+#encripta:hover{
+    color: #4A4E69;
+    background-color: #F2E9E4;
+    border-style: solid;
+    border-color: #4A4E69;
+    border-width: thin;
+    transition: 100ms;
+    box-shadow: 0 4px 10px 0 #939393;
+    cursor: pointer;
+}
+
+#desencripta{
+    background-color: #9A8C98;
+}
+
+#desencripta:hover{
+    color: #9A8C98;
+    background-color: #F2E9E4;
+    border-style: solid;
+    border-color: #9A8C98;
+    border-width: thin;
+    transition: 100ms;
+    box-shadow: 0 4px 10px 0 #939393;
+    cursor: pointer;
+}
+
+/*div de resultado*/
+.texto-resultado, .no-texto{
+    text-align: center;
+    width: 480px;
+    height: 520px;
+    position: absolute;
+    background-color: white;
+    /* margin: -535px 100px 20px 680px; */
+    margin: -33.5em 40em 60em 42em;
+    box-shadow: 0 4px 10px 0 #CCC;
+    border-radius: 2em;
+}
+
+.texto-resultado textarea{
+    margin: 1em;
+    font-size: 1.5em;
+    font-family: 'Inter', sans-serif;
+    width: 18em;
+    height: 15.8em;
+    text-align: center;
+    border: none;
+    resize: none;
+}
+
+.texto-resultado label{
+    display: block;
+    font-size: 0.84em;
+    font-style: italic;
+    margin-top: 1em;
+}
+
+.boton-copiar{
+    color: #4A4E69;
+    border-color: #4A4E69;
+    border-style: solid;
+    border-width: thin;
+    margin-top: 1.3em;
+}
+
+.boton-copiar:hover{
+    color: white;
+    background-color: #4A4E69;
+    border: none;
+    transition: 100ms;
+    box-shadow: 0 4px 10px 0 #939393;
+}
+
+/*div que se verá si no hay texto*/
+.no-texto img{
+    width: 17em;
+    margin: 5em;
+}
+
+.no-texto h2{
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #545454;
+}
+
+.no-texto p{
+    font-size: 0.9em;
+    margin-top: 0.5em;
+}
+
+/*footer*/
+footer{
+    background-color: #9A8C98;
+    color: white;
+    font-size: 0.8em;
+    font-weight: bold;
+    letter-spacing: 0.3em;
+    text-align: center;
+    padding: 1em;
+    margin: 4.5em auto auto;
+}
+
+footer img{
+    width: 5em;
+}
+
+
+/**Responsive**/
+@media screen and (max-width: 1030px) {
+    
+    h1{
+        margin: 2.5em 4.5em;
+    }
+
+    section{
+        margin: 0em 5em;
+    }
+
+    #campo-texto{
+        width: 430px;
+    }
+
+    .boton-endes, .boton-copiar{
+        width: 14em;
+    }
+
+    .texto-resultado, .no-texto{
+        width: 400px;
+        margin: -33.5em 40em 60em 35em;
+    }
+
+    .texto-resultado textarea{
+        margin: 0.5em;
+        width: 15em;
+        height: 16.8em;
+    }
+    
+}
+
+@media screen and (max-width: 800px){
+    h1{
+        text-align: center;
+    }
+
+    section{
+        text-align: center;
+    }
+
+    #campo-texto{
+        width: 30em;
+        /* margin: 2em 1em; */
+    }
+
+    .texto-resultado, .no-texto{
+        width: 40em;
+    }
+
+    .texto-resultado{
+        position: relative;
+        margin: 2em auto;
+    }
+
+    .texto-resultado textarea{
+        width: 25em;
+    }
+
+    .no-texto{
+        margin: -34.5em 4.5em auto;
+    }
+
+}
+
+/*Pantallas más pequeñas, pendientes*/
