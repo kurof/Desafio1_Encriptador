@@ -215,12 +215,16 @@ footer img{
     }
 
     #campo-texto{
-        width: 30em;
+        width: 100%;
         /* margin: 2em 1em; */
     }
 
+    .boton-endes, .boton-copiar{
+        width: 70%;
+    }
+
     .texto-resultado, .no-texto{
-        width: 40em;
+        width: 80%;
     }
 
     .texto-resultado{
@@ -229,13 +233,19 @@ footer img{
     }
 
     .texto-resultado textarea{
-        width: 25em;
+        width: 90%;
+        height: 75%;
     }
 
     .no-texto{
-        margin: -34.5em 4.5em auto;
+        /* margin: -34.5em 0em auto 2.2em; */
+        margin: -70.5% 10%;
+    }
+
+    .no-texto img{
+        width: 50%;
+        margin: 10%;
+        /* margin-top: 45%; */
     }
 
 }
-
-/*Pantallas más pequeñas, pendientes*/
