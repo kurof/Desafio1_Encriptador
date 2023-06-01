@@ -239,7 +239,9 @@ footer img{
 
     .no-texto{
         /* margin: -34.5em 0em auto 2.2em; */
-        margin: -70.5% 10%;
+        /* margin: -70.5% 10%; */
+        margin-top: -34.5em;
+        margin-left: 4.5em;
     }
 
     .no-texto img{
@@ -248,4 +250,22 @@ footer img{
         /* margin-top: 45%; */
     }
 
+}
+
+@media screen and (max-width: 580px){
+    .no-texto{
+        margin-left: 3.5em;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .no-texto{
+        margin-left: 2.7em;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .no-texto{
+        margin-left: 2em;
+    }
 }
